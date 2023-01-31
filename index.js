@@ -1,7 +1,10 @@
-let btn = document.getElementById("btn");
+//education add and clear button 
+//add button
+let row=1;
+let education_btn = document.getElementById("add-education");
 let table_body = document.getElementById("table-body");
 
-btn.addEventListener("click", () => {
+education_btn.addEventListener("click", () => {
   let tr = document.createElement("tr");
 
   let template = `
@@ -15,8 +18,23 @@ btn.addEventListener("click", () => {
              `;
   tr.insertAdjacentHTML('beforeend', template)
   table_body.appendChild(tr);
+  row++;
 });
 
+//clear button
+let remove_education = document.getElementById("clear-education");
+remove_education.addEventListener('click', ()=>{
+  if(row > 1){
+    table_body.deleteRow(1);
+  }
+})
+
+
+console.log(remove_education);
+
+
+//experience add and clear button 
+//add button
 let experience_btn = document.getElementById("add_experience");
 let experience_block = document.getElementById("experience-data");
 
@@ -49,12 +67,19 @@ experience_btn.addEventListener("click", () => {
     
 })
 
+//clear button
+let remove_experience = document.getElementById("remove_experience");
+
+
+
+
+//certification add and clear button 
 let certificate_btn = document.getElementById("add_certificate");
 let certificate_block = document.getElementById("certificate-data");
 
 certificate_btn.addEventListener("click", () => {
     let certificate_Div = document.createElement("div");
-
+    
     let template = `
     <label for="certification_datte">Certification Date</label>
         <input type="date" name="Certification_date" id="Certification_date" />
@@ -70,10 +95,15 @@ certificate_btn.addEventListener("click", () => {
           name="Certification_authority"
           id="Certification_authority"
         />
+        <button id="remove_certificate">Clear</button>
     `;
     certificate_Div.insertAdjacentHTML('beforeend', template);
-    // console.log(certificate_Div);
-    // console.log(certificate_block);
+    console.log(certificate_Div);
+    console.log(certificate_block);
     certificate_block.appendChild(certificate_Div);
+})
+
+let remove_certificate = document.getElementsByClassName("btn");
+remove_certificate.addEventListener('click', ()=>{
     
 })
