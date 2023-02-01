@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:  60%;
+    margin: 0 auto;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    padding: 20px;
+}
+
+.right p{
+   text-align: right;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.half-1, .half-2{
+    margin: 10px ;
+}
+.box{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-bottom: 10px;
+}
+
+.flex{
+    margin: 20px;
+}
