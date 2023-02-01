@@ -1,33 +1,84 @@
-
+.personal input{
+    display: table-cell;
+    width: 300px;
+    padding: 3%;
+    margin-right:45px;
+}
+td{
+margin-right: 45px;
+}
+label{
+    display: table-cell;
+    size: 300px;
+}
+textarea{
+    display:table-cell;
+}
+.Container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 body{
-    background-color: rgb(186, 250, 250);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .box{
-    display: table-row;
+    display:inline-block;
+    
     
 }
-.education{
+.box2{
+    display:inline-block;
     float: right;
-    display: inline-table;
-    padding-left:10%;
-    border-collapse: separate;
-    border-spacing: 10px;
-    position: absolute;
+    margin-right: 13%;
+    
 
-}
-.personal,.experience,.Certification{
-    display: inline-table;
-    float: left;
-    margin-left: 15%;
-    border-collapse: separate;
-    border-spacing: 10px;
-
-
-}
-
-label,input{
-    display: table-cell;
     
 }
+.box3{
+    display:inline-block; 
+}
+
+.about textarea{
+    width:750px;
+    padding: 2%;
+}
+
+
+.education,.experience,.Certification,.personal,.about{
+    margin-left: 10%;
+}
+
+.education input{
+    border-width: 1px;
+    width: 78%;
+    padding: 4px;
+}
+.experience input,label{
+    width: 200px;
+    margin-right: 25px;
+}
+.experience input{
+    padding: 5px;
+}
+.Certification input,label{
+    width: 200px;
+    margin-right: 25px;
+}
+.Certification input{
+    padding: 5px;
+}
+.remove{
+    background-color: transparent;
+    border-color: transparent;
+}
+.Container{
+    background-color: aliceblue;   
+    border: black 2px solid;
+     box-shadow: 10px 10px;
+}
+#generate-btn{
+    text-align: center;}
+    #generate-btn button{
+        padding: 15px;
+    }
