@@ -1,0 +1,66 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height:150px;
+    margin: 20px 0px;
+    
+}
+
+.personal-details{
+    padding: 20px;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.skills{
+    padding: 20px;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.education-details{
+    padding: 20px;
+    border-right: 1px dashed black;
+    
+}
+
+.edu-1{
+    padding:10px 0px 0px 0px;
+}
+
+.edu-2{
+    padding:10px 0px 0px 0px;
+}
+
+.aboutme{
+    padding: 20px;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.experience-details{
+    padding: 20px;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.certificate-details{
+    padding:20px;
+    border-right: 1px dashed black;
+}
+
+.skills-list{
+    padding:10px 20px 0px 20px;
+}
