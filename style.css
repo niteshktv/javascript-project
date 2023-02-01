@@ -1,7 +1,84 @@
-tr{
-    padding: 5px;
-    /* border: 1px solid black; */
+.personal input{
+    display: table-cell;
+    width: 300px;
+    padding: 3%;
+    margin-right:45px;
 }
 td{
-    border: 1px solid black;
+margin-right: 45px;
 }
+label{
+    display: table-cell;
+    size: 300px;
+}
+textarea{
+    display:table-cell;
+}
+.Container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box{
+    display:inline-block;
+    
+    
+}
+.box2{
+    display:inline-block;
+    float: right;
+    margin-right: 13%;
+    
+
+    
+}
+.box3{
+    display:inline-block; 
+}
+
+.about textarea{
+    width:750px;
+    padding: 2%;
+}
+
+
+.education,.experience,.Certification,.personal,.about{
+    margin-left: 10%;
+}
+
+.education input{
+    border-width: 1px;
+    width: 78%;
+    padding: 4px;
+}
+.experience input,label{
+    width: 200px;
+    margin-right: 25px;
+}
+.experience input{
+    padding: 5px;
+}
+.Certification input,label{
+    width: 200px;
+    margin-right: 25px;
+}
+.Certification input{
+    padding: 5px;
+}
+.remove{
+    background-color: transparent;
+    border-color: transparent;
+}
+.Container{
+    background-color: aliceblue;   
+    border: black 2px solid;
+     box-shadow: 10px 10px;
+}
+#generate-btn{
+    text-align: center;}
+    #generate-btn button{
+        padding: 15px;
+    }
