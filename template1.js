@@ -1,3 +1,4 @@
+
 // personal info
 document.getElementById('FName').innerText = localStorage.getItem("FName");
 document.getElementById('LName').innerText = " " + localStorage.getItem("LName");
@@ -69,13 +70,23 @@ for (let i = 0; i < certificateData.length; i++) {
 }
 
 
-//   printbtn
-  function print_button(){
-    document.getElementById("print-btn").style.visibility="hidden";
-    document.getElementById("container").style.width="100%";
+document.getElementById("container").style.width="99%";
+
+var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
     window.print();
-    document.getElementById("print-btn").style.visibility="visible";
+    }, delayInMilliseconds);
+
+setTimeout(function() {
     document.getElementById("container").style.width="50%";
-    document.getElementById("container").style.border="2px solid black";   
-  }
-//   window.print();
+    // document.getElementById("container").style.border="2px solid black";
+}, delayInMilliseconds);
+
+
+
+    
+
+
+
+  
