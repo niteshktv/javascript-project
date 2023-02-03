@@ -95,5 +95,16 @@ for (let i = 0; i < certificateData.length; i++) {
     certificateDiv.insertAdjacentHTML('beforeend',certificateTemplate);
     tempCertificate.appendChild(certificateDiv);
 }
+document.getElementById("container").style.width="99%";
 
-window.print();
+var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+    window.print();
+    }, delayInMilliseconds);
+
+setTimeout(function() {
+    document.getElementById("container").style.width="50%";
+    // document.getElementById("container").style.border="2px solid black";
+}, delayInMilliseconds);
+

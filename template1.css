@@ -4,10 +4,11 @@
     font-family:'Times New Roman', Times, serif;
 }
 .container{
-    width: 50%;
+
     margin-left: auto;
     margin-right: auto;
-    border: solid black 2px;
+    border: solid black 2px !important;
+
 }
 .main{
     display: grid;
@@ -18,7 +19,7 @@
 
 header{
     text-align: center;    
-    background-color: rgb(243, 210, 210);
+    background-color: rgb(229, 221, 221);
     height:150px;
     margin:20px 0px;       
 }
