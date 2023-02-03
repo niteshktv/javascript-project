@@ -123,7 +123,7 @@ let bool=true;
 let generate_btn = document.getElementById("generate-btn");
 generate_btn.addEventListener("click", () => {
   bool=true;
-  validations();
+  // validations();
   if(bool===true){
     local_storage();
   let picklist1 = formid.template01.selectedIndex;
