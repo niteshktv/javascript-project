@@ -70,9 +70,12 @@ h5{
 }
 i{
     padding-right: 5px;
+    color: white;
 }
 .flex{
     display: flex;
     flex-direction: column;
-    
+}
+a{
+    color: white;
 }

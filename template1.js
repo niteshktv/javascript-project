@@ -3,11 +3,11 @@
 document.getElementById('FName').innerText = localStorage.getItem("FName");
 document.getElementById('LName').innerText = " " + localStorage.getItem("LName");
 document.getElementById("email").innerHTML = `<p id="email"><i class="fa-solid fa-envelope"></i>${localStorage.getItem("email")}</p>`
-document.getElementById("address").innerHTML = `<p><i class="fa-solid fa-location-dot"></i>${localStorage.getItem("address")}</p>`;
-document.getElementById("github").innerHTML = `<p id="github"><i class="fa-brands fa-github"></i>${localStorage.getItem("github")}</p>`;
-document.getElementById("linkedIn").innerHTML = `<a id="linkedIn"><i class="fa-brands fa-linkedin"></i>${localStorage.getItem("linkedIn")}</a>`;
+document.getElementById("address").innerHTML = `<p id="address"><i class="fa-solid fa-location-dot"></i>${localStorage.getItem("address")}</p>`;
+document.getElementById("github").innerHTML = `<p id="github"><i class="fa-brands fa-github"></i><a href="https://github.com/${localStorage.getItem("github")}" target="_blank">${localStorage.getItem("github")}</a></p>`;
+document.getElementById("linkedIn").innerHTML = `<p id="linkedIn"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/${localStorage.getItem("linkedIn")}" target="_blank">${localStorage.getItem("linkedIn")}</a></p>`;
 document.getElementById("phone").innerHTML = `<p id="phone"><i class="fa-solid fa-phone-volume"></i>${localStorage.getItem("phone")}</p>`;
-document.getElementById("website").innerHTML = `<p id="website"><i class="fa-solid fa-globe"></i>${localStorage.getItem("website")}</p>`;
+document.getElementById("website").innerHTML = `<p id="website"><i class="fa-solid fa-globe"></i><a href="${localStorage.getItem("website")}" target="_blank">${localStorage.getItem("website")}</a.</p>`;
 
 //about me
 document.getElementById("aboutme").innerHTML = `<p>${localStorage.getItem("aboutme")}</p>`;
