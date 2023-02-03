@@ -37,6 +37,24 @@ for (let i = 0; i < eduData.length; i++) {
 
 }
 
+//skills
+let skillsData = JSON.parse(localStorage.getItem('skillArr'));
+let tempSkills = document.getElementById('skill-data');
+
+for (let i = 0; i < skillsData.length; i++) {
+    let skillsDiv = document.createElement('div');
+    skillsDiv.className = 'skills-div';
+    let skillsTemplate = `
+    <div class="s-div">
+    <p class="skills-element">${skillsData[i].s_kill}</p>
+
+    </div>
+    `;
+    skillsDiv.insertAdjacentHTML('beforeend',skillsTemplate);
+    tempSkills.appendChild(skillsDiv);
+}
+
+
 
 //experience
 let experienceData = JSON.parse(localStorage.getItem('experienceArr'));

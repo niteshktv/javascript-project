@@ -33,8 +33,8 @@ remove_education.addEventListener('click', () => {
 
 
 //skills add and clear button 
-document.getElementById("1001").style.display = "none";
-let skill_count = 1;
+let length=1;
+let skill_count = 1001;
 let skill_btn = document.getElementById("add_skills");
 let skill_block = document.getElementById("skills-data-1");
 
@@ -42,20 +42,21 @@ skill_btn.addEventListener('click', ()=>{
   let skill_div = document.createElement('div');
   skill_count = skill_count +1;
   let template = `
-  <input type="text"  class="skill_name" placeholder="add skill here">
+  <input type="text" id="skill-name" class="skill-name" placeholder="add skill here">
   <button id="${skill_count}" onclick="removeSkill(this)">Clear</button>
   `
   skill_div.id =`skill-data-${skill_count}`;
   skill_div.insertAdjacentHTML('beforeend', template);
   skill_block.appendChild(skill_div);
+  length++;
 })
 
+document.getElementById("1001").style.display = "none";
 function removeSkill(button){
   if(button.id != 1001){
   let num2 = button.id;
   let row2 = document.getElementById('skill-data-'+ num2);
-  row2.remove()
-  num2--;
+  row2.remove();
   }
 }
 
@@ -123,14 +124,14 @@ let bool=true;
 let generate_btn = document.getElementById("generate-btn");
 generate_btn.addEventListener("click", () => {
   bool=true;
-  validations();
+  // validations();
   if(bool===true){
     local_storage();
-  let picklist1 = formid.template01.selectedIndex;
-  if(picklist1==0)
-  goto_temp1();
-  else
-  goto_temp2();
+  // let picklist1 = formid.template01.selectedIndex;
+  // if(picklist1==0)
+  // goto_temp1();
+  // else
+  // goto_temp2();
   }
 });
 

@@ -67,19 +67,21 @@ function local_storage() {
   
   
   //skills
-  let sIndex = 0;
-  let noOfSkills = document.getElementsByClassName("skill-name").length;
+  let noOfSkills = length;
+
+  console.log("no Of skills: " +noOfSkills);
+
   let skillArr = new Array(noOfSkills);
   for (let i = 0; i <noOfSkills; i++) {
     skillArr[i] = new Skills("");
   }
-
+  let sIndex = 0;
   Array.from(document.getElementsByClassName("skill-name")).forEach((ele) => {
-    skillArr[sIndex]  = ele.value;
+    skillArr[sIndex].s_kill  = ele.value;
     sIndex++;
-  });
- 
+  }); 
   localStorage.setItem("skillArr", JSON.stringify(skillArr));
+  
 
     //experience
     let noOfExperience = document.getElementsByClassName("experience-sdate-class").length;
