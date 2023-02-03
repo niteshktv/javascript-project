@@ -1,39 +1,47 @@
 *{
     margin:0px;
     padding: 0px;
+    font-family:'Times New Roman', Times, serif;
 }
-
+.container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 2px;
+}
 .main{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
-.name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
+header{
+    text-align: center;    
+    background-color: rgb(243, 210, 210);
     height:150px;
-    margin: 20px 0px;
-    
+    margin:20px 0px;       
 }
+.name{
+   padding:40px;
+}
+
 
 .personal-details{
-    padding: 20px;
-    border-right: 1px dashed black;
+    
+    /* padding: 20px; */
+    /* border-right: 1px dashed black; */
     border-bottom: 1px dashed black;
 }
 
 .skills{
-    padding: 20px;
-    border-right: 1px dashed black;
+    padding: px;
+    /* border-right: 1px dashed black; */
     border-bottom: 1px dashed black;
 }
 
 .education-details{
-    padding: 20px;
-    border-right: 1px dashed black;
-    
+    padding-top: 20px;
 }
 
 .edu-1{
@@ -44,23 +52,59 @@
     padding:10px 0px 0px 0px;
 }
 
-.aboutme{
-    padding: 20px;
-    border-right: 1px dashed black;
+.aboutme,.skills{
+    /* padding: 20px; */
     border-bottom: 1px dashed black;
 }
 
 .experience-details{
-    padding: 20px;
-    border-right: 1px dashed black;
+    /* border-right: 1px dashed black; */
     border-bottom: 1px dashed black;
 }
 
 .certificate-details{
-    padding:20px;
-    border-right: 1px dashed black;
+    padding:px;
+    /* border-right: 1px dashed black; */
 }
 
-.skills-list{
-    padding:10px 20px 0px 20px;
+.skills-list {
+    padding:10px 0px 0px 20px;
+}
+.print-btn{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+button{
+    background-color: rgb(118, 118, 250);
+    border: 0%;
+    outline: 0px;
+    font-size: large;
+    margin-top: 1%;
+    padding: 5px 20px; 
+}
+i{
+    padding-right: 2%;
+}
+.personal-details p{
+    margin: 9px;
+}
+.skills h3,.education-details h3,.experience-details h3,.aboutme h3,.certificate-details h3,.personal-details h3{
+    /* padding: 20px; */
+}
+#FName{
+    font-size: 2em;
+    font-weight: lighter;
+
+}
+#LName{
+    font-size:2em;
+    margin-left: 5%;
+    font-weight: bolder;
+}
+p,li{
+    margin: 2%;
+}
+#linkedIn{
+    padding-left: 5px;
 }

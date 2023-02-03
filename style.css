@@ -18,6 +18,8 @@ textarea{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    background-color: aliceblue;
+    border-radius: 2%;
 }
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -40,19 +42,20 @@ body{
 }
 
 .about textarea{
-    width:750px;
+    width:100%;
     padding: 2%;
+    width: fit-content;
 }
 
 
-.education,.experience,.Certification,.personal,.about{
+.education,.experience,.Certification,.personal,.about,.skills{
     margin-left: 10%;
 }
 
 .education input{
     border-width: 1px;
     width: 78%;
-    padding: 4px;
+    padding: 8px;
 }
 .experience input,label{
     width: 200px;
@@ -73,7 +76,6 @@ body{
     border-color: transparent;
 }
 .Container{
-    background-color: aliceblue;   
     border: black 2px solid;
      box-shadow: 10px 10px;
 }
@@ -82,3 +84,26 @@ body{
     #generate-btn button{
         padding: 15px;
     }
+    span{
+        color: red;
+         }
+         th{
+            text-align: left;
+         }
+
+
+         #select-templates{
+            margin-left:10% ;
+            padding-top: 2%;
+            
+         }
+         #select-templates select,label{
+            font-size: larger;
+         }
+         .skills input,label{
+            width: 200px;
+            margin-right: 25px;
+        }
+        .skills input{
+            padding: 5px;
+        }
