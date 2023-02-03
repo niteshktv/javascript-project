@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="template2.css">
+    <script src="https://kit.fontawesome.com/c66455b3cd.js" crossorigin="anonymous"></script>
     <title>Template 2</title>
 </head>
 
@@ -13,27 +14,26 @@
     <div class="container">
         <div class="head">
             <div class="left">
-                <h1 style="font-weight: bold;">Korina</h1>
-                <h1>Villanueva</h1>
-                <p>Professional Accountant</p>
+                <h1 id="FName" style="font-weight: bold;">Korina</h1>
+                <h1 id="LName">Villanueva</h1>
+                <p id="address">123 anywhere st. any city</p>
             </div>
             <div class="right">
-                <p>+123-456-789</p>
-                <p>hello@gmail.com</p>
-                <p>123 anywhere st. any city</p>
+                <p id="phone"></p>
+                <p id="email"></p>
+                <p id="github">github.com</p>
+                <p id="linkedIn">linkedin id</p>
+                <p id="website">website.com</p>
             </div>
         </div>
         <div class="main">
             <div class="half-1">
-                <div class="about flex">
+                <div class="about margin">
                     <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quo, obcaecati eos autem harum
-                        veniam odio? Quis nulla porro laboriosam ex iste quaerat sint, voluptate corporis non ab
-                        reiciendis aliquam inventore possimus praesentium nemo vero necessitatibus cum mollitia tenetur?
-                        Eum!</p>
+                    <p id="aboutme"></p>
                 </div>
                 <hr>
-                <div class="skills flex">
+                <div class="skills margin" id="skill-data">
                     <h2>Skills</h2>
                     <ul>
                         <li>Project Management</li>
@@ -42,103 +42,26 @@
                     </ul>
                 </div>
                 <hr>
-                <div class="exeperince flex">
-                    <h2>Experience</h2>
-                    <ul>
-                        <li>UX/UI</li>
-                        <li>User Flows</li>
-                        <li>VS Code</li>
-                    </ul>
+                <div class="exeperince margin">
+                    <h2>Certificates</h2>
+                    <div class="box flex" id="certificate-data"></div>
                 </div>
                 <hr>
             </div>
             <div class="half-2">
                 <div class="work-experience">
                     <h2>Work Experience</h2>
-                    <div class="box">
-                        <div class="left-1">
-                            <p>2019-2022</p>
-                            <p>3 years</p>
-                        </div>
-                        <div class="right-1">
-                            <h5>Financial Analyst| Liceria & Co.</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, numquam modi vero
-                                temporibus
-                                doloremque ex nam voluptas unde id aperiam quidem rerum accusantium vel quaerat error
-                                expedita laboriosam reprehenderit tempore ea veniam harum et. Ea dolorem exercitationem
-                                consequatur. Voluptates, laboriosam.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="left-1">
-                            <p>2019-2022</p>
-                            <p>3 years</p>
-                        </div>
-                        <div class="right-1">
-                            <h5>Financial Analyst| Liceria & Co.</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, numquam modi vero
-                                temporibus
-                                doloremque ex nam voluptas unde id aperiam quidem rerum accusantium vel quaerat error
-                                expedita laboriosam reprehenderit tempore ea veniam harum et. Ea dolorem exercitationem
-                                consequatur. Voluptates, laboriosam.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="left-1">
-                            <p>2019-2022</p>
-                            <p>3 years</p>
-                        </div>
-                        <div class="right-1">
-                            <h5>Financial Analyst| Liceria & Co.</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, numquam modi vero
-                                temporibus
-                                doloremque ex nam voluptas unde id aperiam quidem rerum accusantium vel quaerat error
-                                expedita laboriosam reprehenderit tempore ea veniam harum et. Ea dolorem exercitationem
-                                consequatur. Voluptates, laboriosam.</p>
-                        </div>
-                    </div>
-                </div>
+                    <div class="box flex" id="experience-data"></div>
                 <hr>
                 <div class="education">
                     <h2>Education</h2>
-                    <div class="box">
-                        <div class="left-1">
-                            <p>2014-2017</p>
-                            <p>4 years</p>
-                        </div>
-                        <div class="right-1">
-                            <h5>Master of Business Administration</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum doloremque cum
-                                dolorum natus et tempora nostrum eos consequuntur unde.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="left-1">
-                            <p>2014-2017</p>
-                            <p>4 years</p>
-                        </div>
-                        <div class="right-1">
-                            <h5>Master of Business Administration</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum doloremque cum
-                                dolorum natus et tempora nostrum eos consequuntur unde.</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="left-1">
-                            <p>2014-2017</p>
-                            <p>4 years</p>
-                        </div>
-                        <div class="right-1">
-                            <h5>Master of Business Administration</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum doloremque cum
-                                dolorum natus et tempora nostrum eos consequuntur unde.</p>
-                        </div>
-                    </div>
+                    <div class="box flex" id="education-data"></div>
                 </div>
                 <hr>
             </div>
         </div>
     </div>
+    <script src="template2.js"></script>
 
 </body>
 
