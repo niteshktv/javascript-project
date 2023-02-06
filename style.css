@@ -77,9 +77,10 @@ body{
 }
 .Container{
     border: black 2px solid;
-     box-shadow: 10px 10px;
+     box-shadow: 5px 5px 12px black;
 }
 #generate-btn{
+    margin-bottom: 2%;;
     text-align: center;}
     #generate-btn button{
         padding: 15px;
@@ -107,3 +108,26 @@ body{
         .skills input{
             padding: 5px;
         }
+
+#formid{
+    padding-top:20px;
+    padding-bottom: 50px;
+    display:flex;
+    justify-content: space-around;
+
+}
+#formid button img{
+    width:200px;
+    height:300px;
+}
+
+#t1:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #t2:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

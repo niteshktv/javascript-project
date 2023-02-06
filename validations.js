@@ -1,6 +1,6 @@
 //valid email function
 function valid_email(email) {
-  var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var mailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
   if (!mailFormat.test(email)) {
     // alert("Invalid Email");
     focus_func(document.getElementById("email"));
@@ -24,11 +24,10 @@ function validations() {
   //valid first name
   const f_name = document.getElementById("f-name").value;
   var FName = /^[a-zA-Z]+[a-zA-Z]+$/;
-  if (!f_name.match(FName)) {
-    // alert("Invalid first name");
-
+  if (!f_name.match(FName) || f_name.length < 4) {
     focus_func(document.getElementById("f-name"));
     bool = false;
+
   }
   else {
     document.getElementById("f-name").style.border = "1px solid black"
@@ -37,9 +36,7 @@ function validations() {
   //valid last name
   const l_name = document.getElementById("l-name").value;
   var LName = /^[a-zA-Z]+[a-zA-Z]+$/;
-  if (!l_name.match(LName)) {
-    // alert("Invalid last name");
-
+  if (!l_name.match(LName) || l_name.length < 4) {
     focus_func(document.getElementById("l-name"));
     bool = false;
   }
@@ -65,7 +62,7 @@ function validations() {
   } else {
     document.getElementById("github").style.border = "1px solid black";
   };
-};
+
 
 
 
@@ -139,3 +136,4 @@ if (grades.value.length === 0) {
 else {
   grades.style.border = "1px solid black"
 }
+};

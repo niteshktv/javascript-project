@@ -2,47 +2,63 @@
     margin:0px;
     padding: 0px;
     font-family:'Times New Roman', Times, serif;
+    -webkit-print-color-adjust: exact !important;
 }
 .container{
 
     margin-left: auto;
     margin-right: auto;
-    border: solid black 2px !important;
+    /* border: solid black 2px !important; */
+    /* height: 99.5vh; */
+    /* box-shadow: 8px 8px 19px black; */
 
 }
 .main{
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 44% 1% 55%;
     padding-left: 2%;
     padding-right: 2%;
 }
 
 header{
+    display: grid;
+    grid-template-columns: 70% 30%;
     text-align: center;    
-    background-color: rgb(229, 221, 221);
-    height:150px;
+    background-color: rgb(212, 211, 211);
+    height:auto;
     margin:20px 0px;       
+    box-shadow: 1px 1px 12px black;
+}
+
+.right{
+    padding-left: 2%;
 }
 .name{
    padding:40px;
+   text-align: center;
+   
 }
 
 
 .personal-details{
     
     /* padding: 20px; */
-    /* border-right: 1px dashed black; */
+    /* border-right: 1px solid black; */
     border-bottom: 1px dashed black;
 }
+ p{
+    padding-top: 1px;
+}
 
-.skills{
-    padding: px;
-    /* border-right: 1px dashed black; */
+.skill{
+    /* border-right: 1px solid black; */
     border-bottom: 1px dashed black;
+    padding-right:2%;
+    
 }
 
 .education-details{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .edu-1{
@@ -59,13 +75,14 @@ header{
 }
 
 .experience-details{
-    /* border-right: 1px dashed black; */
-    border-bottom: 1px dashed black;
+    /* border-right: 1px solid black; */
+    padding-right:2%;
 }
 
 .certificate-details{
-    padding:px;
-    /* border-right: 1px dashed black; */
+    border-bottom: 1px dashed black;
+
+    padding-right:2%;
 }
 
 .skills-list {
@@ -90,8 +107,8 @@ i{
 .personal-details p{
     margin: 9px;
 }
-.skills h3,.education-details h3,.experience-details h3,.aboutme h3,.certificate-details h3,.personal-details h3{
-    /* padding: 20px; */
+.skill h3,.experience-details h3,.certificate-details h3{
+    padding-top: 10px;
 }
 #FName{
     font-size: 2em;
@@ -99,13 +116,22 @@ i{
 
 }
 #LName{
-    font-size:2em;
-    margin-left: 5%;
+    font-size: 2em;
+    margin-left: 1%;
     font-weight: bolder;
 }
 p,li{
     margin: 2%;
 }
-#linkedIn{
-    padding-left: 5px;
+.centre{
+    border-right: 1px black solid;
+   
 }
+.img{
+    margin: 15%;
+}
+img{
+    max-width: 9em;
+    border-radius: 50%;
+}
+

@@ -1,4 +1,3 @@
-
 //education add and clear button 
 //add button
 let row = 1;
@@ -70,8 +69,8 @@ experience_btn.addEventListener("click", () => {
   let experienceDiv = document.createElement("div");
   flag = flag + 1;
   let template = `
-    <input type="date" name="experience_start_date" id="experience_start_date" class="experience-sdate-class"/>
-    <input type="date" name="experience_till_date" id="experience_till_date" class="experience-tdate-class"/>
+    <input type="month" name="experience_start_date" id="experience_start_date" class="experience-sdate-class"/>
+    <input type="month" name="experience_till_date" id="experience_till_date" class="experience-tdate-class"/>
     <input type="text" name="company name" id="company_name" class="company-name" placeholder="enter company name"/>
     <button id="${flag}" onclick="removeExperience(this)">Clear</button>
     `;
@@ -120,6 +119,33 @@ function removeCertificate(button) {
 }
 
 
+//template button
+let selected = 0;
+let template_btn1 = document.getElementById("t1");
+template_btn1.addEventListener("click",() => {
+  selected=1;
+  template_btn1.style.backgroundColor = "black";
+  template_btn2.style.backgroundColor = "buttonface";
+});
+let template_btn2 = document.getElementById("t2");
+template_btn2.addEventListener('click',() => {
+  selected=2;
+  template_btn1.style.backgroundColor = "buttonface";
+  template_btn2.style.backgroundColor = "black";
+});
+
+// //Get form element
+// var form=document.getElementById("formId");
+// function submitForm(event){
+
+//    //Preventing page refresh
+//    event.preventDefault();
+// }
+
+// //Calling a function during form submission.
+// form.addEventListener('submit', submitForm);
+
+//generate button
 let bool=true;
 let generate_btn = document.getElementById("generate-btn");
 generate_btn.addEventListener("click", () => {
@@ -127,11 +153,12 @@ generate_btn.addEventListener("click", () => {
   // validations();
   if(bool===true){
     local_storage();
-  // let picklist1 = formid.template01.selectedIndex;
-  // if(picklist1==0)
-  // goto_temp1();
-  // else
-  // goto_temp2();
+  if(selected==1)
+  goto_temp1();
+  else if(selected==2)
+  goto_temp2();
+  else
+  alert("select any one template!");
   }
 });
 
@@ -142,7 +169,3 @@ function goto_temp1(){
 function goto_temp2(){
   window.location.href="template2.html";
 }
-
-
-
-

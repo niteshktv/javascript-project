@@ -7,10 +7,12 @@ body{
     margin: 0 auto;
 }
 .container{
-    border: black 2px solid;
+    /* border: black 2px solid; */
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    /* box-shadow: 8px 8px 19px black; */
+
     
 }
 
@@ -32,7 +34,7 @@ body{
 
 .main{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
 }
 .half-2{
     margin: 20px;
@@ -51,6 +53,9 @@ body{
     margin: 20px;
 }
 .education h2{
+    /* margin-top: 20px; */
+}
+.work-experience h2{
     margin-top: 20px;
 }
 h2{
