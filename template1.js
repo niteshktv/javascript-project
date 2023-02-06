@@ -54,17 +54,25 @@ for (let i = 0; i < skillsData.length; i++) {
 let experienceData = JSON.parse(localStorage.getItem('experienceArr'));
 let tempExperience = document.getElementById('experience');
 
-for (let i = 0; i < experienceData.length; i++) {
-    let experienceDiv = document.createElement('div');
-    experienceDiv.className = 'exp-div';
-    let experienceTemplate = `
-    <div class="exp-div">
-    <p>${experienceData[i].cName}</p>
-    <p>${experienceData[i].sDate} - ${experienceData[i].tDate}</p>
-    </div>
-    `;
-    experienceDiv.insertAdjacentHTML('beforeend',experienceTemplate);
-    tempExperience.appendChild(experienceDiv);
+if(experienceData[0].sDate != ""){
+    for (let i = 0; i < experienceData.length; i++) {
+        let experienceDiv = document.createElement('div');
+        experienceDiv.className = 'exp-div';
+        let experienceTemplate = `
+        <div class="exp-div">
+        <p>${experienceData[i].cName}</p>
+        <p>${experienceData[i].sDate} to ${experienceData[i].tDate}</p>
+        </div>
+        `;
+        experienceDiv.insertAdjacentHTML('beforeend',experienceTemplate);
+        tempExperience.appendChild(experienceDiv);
+    }
+}
+else{
+    console.log(experienceData);
+    let exp_div = document.getElementById('experience-details');
+    exp_div.style.visibility = "hidden";
+
 }
 
 
@@ -92,11 +100,17 @@ document.getElementById("container").style.width="99%";
 var delayInMilliseconds = 1000; //1 second
 
 setTimeout(function() {
+    document.getElementById("container").style.height="99.5vh";
+
     window.print();
     }, delayInMilliseconds);
 
 setTimeout(function() {
     document.getElementById("container").style.width="50%";
+    document.getElementById("container").style.height="auto";
+
+
+
     // document.getElementById("container").style.border="2px solid black";
 }, delayInMilliseconds);
 

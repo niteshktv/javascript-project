@@ -28,6 +28,7 @@ for (let i = 0; i < eduData.length; i++) {
         <p>${eduData[i].sName}</p>
         <p>${eduData[i].fields}</p>
         <p>${eduData[i].grades}</p>
+        <br>
     </div>
 </div>
 `;
@@ -60,22 +61,29 @@ for (let i = 0; i < skillsData.length; i++) {
 let experienceData = JSON.parse(localStorage.getItem('experienceArr'));
 let tempExperience = document.getElementById('experience-data');
 
-for (let i = 0; i < experienceData.length; i++) {
-    let experienceDiv = document.createElement('div');
-    experienceDiv.className = 'exp-div';
-    let experienceTemplate = `
-    <div class="exp-div">
-        <div class="left-1">
-            <p>${experienceData[i].sDate} - ${experienceData[i].tDate}</p>
+if(experienceData[0].sDate != ""){
+    for (let i = 0; i < experienceData.length; i++) {
+        let experienceDiv = document.createElement('div');
+        experienceDiv.className = 'exp-div';
+        let experienceTemplate = `
+        <div class="exp-div">
+            <div class="left-1">
+                <p>${experienceData[i].sDate} to ${experienceData[i].tDate}</p>
+            </div>
+            <div class="right-1">
+                <h5>${experienceData[i].cName}</h5>
+            </div>
         </div>
-        <div class="right-1">
-            <h5>${experienceData[i].cName}</h5>
-        </div>
-    </div>
-    `;
-    experienceDiv.insertAdjacentHTML('beforeend',experienceTemplate);
-    tempExperience.appendChild(experienceDiv);
+        `;
+        experienceDiv.insertAdjacentHTML('beforeend',experienceTemplate);
+        tempExperience.appendChild(experienceDiv);
+    }
 }
+else{
+    let exp_div = document.getElementById('experience-details');
+    exp_div.style.visibility = "hidden";
+}
+
 
 
 //certificate
@@ -105,6 +113,6 @@ setTimeout(function() {
 
 setTimeout(function() {
     document.getElementById("container").style.width="50%";
-    // document.getElementById("container").style.border="2px solid black";
+    
 }, delayInMilliseconds);
 
