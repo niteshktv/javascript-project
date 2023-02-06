@@ -14,19 +14,22 @@ label{
 textarea{
     display:table-cell;
 }
+
 .Container{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     background-color: aliceblue;
+    /* background-image: linear-gradient(to bottom right, rgb(123, 188, 249), rgb(119, 234, 111)); */
     border-radius: 2%;
 }
+
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image:url("/Images/stars.jpg");
 }
 .box{
     display:inline-block;
-    
     
 }
 .box2{
@@ -39,6 +42,9 @@ body{
 }
 .box3{
     display:inline-block; 
+}
+.per-details{
+    margin-bottom: 20px;
 }
 
 .about textarea{

@@ -17,25 +17,42 @@
         <div class="row2">
         <div class="box">
          
-          <label for="f-name">First Name<span>&#42;</span></label>
-          <input type="text" id="f-name" placeholder="Enter here" minlength="4" maxlength="20" required/>
-          <label for="email">Email<span>&#42;</span></label>
-          <input type="email" name="email" id="email" placeholder="Enter your email"   required/>
-          <label for="linkedIn">LinkedIn Profile</label>
-          <input type="url" name="linkedIn" id="linkedIn" placeholder="enter url"/>
-          <label for="website">Website</label>
-          <input type="url" name="website" id="website" placeholder="enter url"/>
-          
+          <div id="fbox">
+            <label for="f-name">First Name<span>&#42;</span></label>
+            <input type="text" id="f-name" class="per-details" placeholder="Enter here" minlength="4" maxlength="20" required/>
+          </div>
+    
+          <div id="emailbox">
+            <label for="email">Email<span>&#42;</span></label>
+            <input type="email" name="email" id="email" class="per-details" placeholder="Enter your email"   required/>
+          </div>
+          <div id="linkedinbox">
+            <label for="linkedIn">LinkedIn Profile</label>
+            <input type="url" name="linkedIn" id="linkedIn" class="per-details" placeholder="enter url"/>
+          </div>
+          <div id="websitebox">
+            <label for="website">Website</label>
+            <input type="url" name="website" id="website" class="per-details" placeholder="enter url"/>
+          </div>
+
         </div>
         <div class="box2">
-          <label for="l-name">Last Name<span>&#42;</span></label>
-          <input type="text" id="l-name" placeholder="Enter here"  maxlength="20" required/>
-          <label for="phone">Phone<span>&#42;</span></label>
-          <input type="tel" name="phone" id="phone" placeholder="111-111-1111" maxlength="10" required/>          
-          <label for="github">Github Profile</label>
-          <input type="url" name="github" id="github" placeholder="enter url" />
-          <label for="address">Address<span>&#42;</span></label>
-          <input type="text" name="address" id="address" maxlength="80" placeholder="Your address" required/>
+          <div id="lbox">
+            <label for="l-name">Last Name<span>&#42;</span></label>
+            <input type="text" id="l-name" class="per-details" placeholder="Enter here"  maxlength="20" required/>
+          </div>
+          <div id="phonebox">
+            <label for="phone">Phone<span>&#42;</span></label>
+            <input type="tel" name="phone" id="phone" class="per-details" placeholder="111-111-1111" maxlength="10" required/> 
+          </div>  
+          <div id="github-box">
+            <label for="github">Github Profile</label>
+            <input type="url" name="github" id="github" class="per-details" placeholder="enter url" />
+          </div>
+          <div id="address-box">
+            <label for="address">Address<span>&#42;</span></label>
+            <input type="text" name="address" id="address" maxlength="80" class="per-details" placeholder="Your address" required/>
+          </div>       
         </div>
        
        
@@ -44,7 +61,7 @@
       </div>
       <div class="about">
         <h2>About Me<span>&#42;</span></h2>
-        <div class="box">
+        <div class="box" id="about-box">
         <textarea name="aboutme" id="aboutme" cols="50" rows="3" placeholder="Describe yourself here..." required></textarea>
         </div>
       </div>
@@ -64,7 +81,7 @@
             </thead>
             <tbody id="table-body">
               <tr id="data" row="1" class="table-row">
-                <td>
+                <td id="clg-name">
                   <input type="text" id="college-name" class="college-name-class" placeholder="enter name here" required/>
                 </td>
                 <td>
